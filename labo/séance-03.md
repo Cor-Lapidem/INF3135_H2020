@@ -20,7 +20,7 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 ## 1 - Lecture, traitement et affichage formaté (bash)
 
-Écrivez un programme qui reçois en entrée des données en format ascii/texte
+Écrivez un programme qui reçoit en entrée des données en format ascii/texte
 contenant une liste de villes avec certaines caractéristiques et qui affiche
 sous forme de tableau formaté ces informations.
 
@@ -66,7 +66,7 @@ Plus précisément, vous devez respecter les contraintes suivantes:
 
 Q1. De quelle manière allez-vous procéder? Vous allez commencer par quoi?
 Q2. Comment pourrait-on s'y prendre pour valider rapidement que la sortie de votre programme est exacte?
-Q3. Sur 10 quel est la difficulté de cet exercice?
+Q3. Sur 10 quelle est la difficulté de cet exercice?
 
 ## 2 - Commandes d'une ligne (Linux)
 
@@ -123,5 +123,5 @@ Q3. Sur 10 quel est la difficulté de cet exercice?
 ### FIN.
 ---
 
-##### Auteur Guy Francoeur, version H2020 révisé
+##### Auteur Guy Francoeur, version H2020 révisée
 ###### basé sur le matériel d'Alexandre Blondin Massé, Professeur
