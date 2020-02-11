@@ -18,9 +18,9 @@ divisant les fichiers dans des répertoires.
  > > Pourquoi versionner vos exercices avec Git: afin de
 vous entraîner à utiliser le logiciel (commandes) naturellement.
 
-## 1 - Fichiers et affichage formaté
+## 1 - Lecture, traitement et affichage formaté (bash)
 
-Écrivez un petit programme C qui prend en entrée le nom d'un fichier texte
+Écrivez un programme qui reçois en entrée des données en format ascii/texte
 contenant une liste de villes avec certaines caractéristiques et qui affiche
 sous forme de tableau formaté ces informations.
 
@@ -64,27 +64,11 @@ Plus précisément, vous devez respecter les contraintes suivantes:
 - Le pays doit occuper exactement 4 colonnes aussi (il faut couper sinon);
 - La population doit être alignée à droite.
 
-Q1. De quelle manière allez-vous procéder? Vous allez commencer par quoi?  
+Q1. De quelle manière allez-vous procéder? Vous allez commencer par quoi?
 Q2. Comment pourrait-on s'y prendre pour valider rapidement que la sortie de votre programme est exacte?
+Q3. Sur 10 quel est la difficulté de cet exercice?
 
-## 2 - Fouille dans un tableau
-
-Écrivez une fonction C dont la signature est
-
-```c
-unsigned int trouverElement(const double tableau[],
-                            unsigned int taille,
-                            double element);
-```
-
-Votre fonction retourne
- + 0 si l'élément n'est pas présent;
- + l'indice dans le tableau si l'élément est présent;
- 
- Q1. Que se passe-t-il si l'élément se trouve à l'index zéro ?  
- Q2. Que peut-on changer pour éviter ce problème ?
-
-## 3 - Commandes d'une ligne (Linux)
+## 2 - Commandes d'une ligne (Linux)
 
 À l'aide des programmes spécifiés entre parenthèses et des tubes (pipes),
 écrivez une commande d'une ligne qui effectue les tâches demandées:
@@ -139,5 +123,5 @@ Votre fonction retourne
 ### FIN.
 ---
 
-##### Auteur Guy Francoeur, version H2020
+##### Auteur Guy Francoeur, version H2020 révisé
 ###### basé sur le matériel d'Alexandre Blondin Massé, Professeur
