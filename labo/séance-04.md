@@ -71,7 +71,25 @@ reposeseetresteesope
 
 N'hésitez pas à utiliser la bibliothèque `string.h`.
 
-## 3 - Palindromes
+
+## 3 - Tableau de valeurs numériques
+
+Écrivez un programme selon le standard C11 qui appel une fonction C dont la signature est :
+
+```c
+unsigned int trouverElement(const double tableau[],
+                            unsigned int taille,
+                            double element);
+```
+
+Votre fonction retourne
+ + 0 si l'élément n'est pas présent;
+ + l'indice dans le tableau si l'élément est présent;
+ 
+ Q1. Que se passe-t-il si l'élément se trouve à l'index zéro ?  
+ Q2. Que peut-on changer pour éviter ce problème ?
+
+## 4 - Palindromes
 
 Écrivez une fonction C dont la signature est
 ```c
@@ -112,7 +130,7 @@ retournent `true`.
 Dans les deux cas, fournissez des tests pour montrer que vos fonctions sont
 correctement implémentées.
 
-## 4 - Extra
+## 5 - Extra
 
 + Q1. Vous devez refaire la fonction printf() qui est disponible dans la librairie standard `<stdio.h>`.
 Votre nouvelle fonction doit idéalement reproduire le plus fidèlement possible ce que la fonction `printf()`
@@ -128,5 +146,5 @@ de votre enseignant.
 ### FIN.
 ---
 
-##### Auteur Guy Francoeur, version H2020
+##### Auteur Guy Francoeur, version H2020 révisée
 ###### basé sur le matériel d'Alexandre Blondin Massé, Professeur
