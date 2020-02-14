@@ -69,6 +69,8 @@ $ head -n 100 file.txt | ./tp2
 - Les fichiers seront maintenus dans la branche nommée `tp2`;
 - La branche `master` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
+- La gestion des répertoires doit ce faire de façon absolu (nommé) à partir de votre répertoire de travail;
+  + Vous ne pouvez pas utiliser `..` ou la commande `cd` dans votre travail;
 - La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
 
 Définition :
@@ -332,6 +334,8 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 - Un fichier de script bash nommé `liste.sh` réalisé lors du tp1;
 - Un fichier nommé `tp1.c` réalisé lors du tp1;
 - Un fichier ``.gitignore``.
+
+  L'usage de la commande `rm` dans votre travail est permise.  Avec de grands pouvoir viennent de grandes responsabilités. 
 
   Les travaux seront corrigés sur le serveur Java. Vous devez donc vous assurer
   que votre programme fonctionne **sans modification** sur celui-ci.
