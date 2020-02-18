@@ -5,15 +5,17 @@
 ### Matériel du cours INF3135 édition Hiver 2020
 
 ### Dates importantes:
-- Semaine de relâche : 24 au 28 février 2020 (pas de cours)
+- Semaine de relâche : 24 au 28 février 2020 (pas de cours) (examen de pratique lundi de 13h35 à 14h20)
 - Examen #1 25% : 29 février 2020 14h ET durée 3h
   + Groupe 010 : SH-R810
   + Groupe 030 : SH-2120
+  + Étudiants inscrits en math INF1132 de 14h à 20h au local : PK-R210
 - Examen #2 25% : 25 avril 2020 14h ET durée 3h
   + Groupe 010 : SH-R810
   + Groupe 030 : SH-2120
+  + Étudiants inscrits en math INF1132 de 14h à 20h au local : PK-R210
 - Travail 1 10% : 8 février 2020 22h59 ET (heure du Québec,  ET = Eastern Time)
-- Travail 2 20% : 
+- Travail 2 20% : 21 mars 2020 21h59 ET
 - Travail 3 20% :
 
 ##### Directives aux examens
@@ -44,17 +46,16 @@
 - Chapitre 13 mémoire (son organisation en C)
 
 #### Ateliers (laboratoires) :
-+ Il y aura 10 séances (minimum);
-+ Il n'y a pas de séance de laboratoire la semaine suivant l'examen.
++ Il y aura 10 séances;
++ Il n'y a pas de séance de laboratoire la semaine suivant l'examen;
++ Ne pas prendre de retard dans vos devoirs.
++ Le moniteur de laboratoire est Alexandre Lachapelle.
 
 #### Linux
 
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
 parlons de Linux un `OS`, en anglais, qui est stable et performant.  `Linux` et `Bash` seront vus
 et sont nécessaires pour l'accomplissement de tâches dans le cadre de ce cours.
-
-
-+ Le moniteur de laboratoire est Alexandre Lachapelle.
 
 
 Le matériel sera mis à jour sur une base régulière.
