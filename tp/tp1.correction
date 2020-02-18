@@ -1,0 +1,21 @@
+1 00 0 recuperation          echo -e "**** bravo ****" >> ../inf*/commentaires.txt
+1 00 0 completude            test -f tp1.c && test -f .gitignore && test -f cp.txt && test -f liste.sh
+1 00 0 Makefile existe       test -f Makefile
+0 00 0 preparation (GF)      rm -f flop.h flop.o tp1.o tp1
+1 00 0 make + dependances    make
+1 00 0 verification          test -f tp1
+1 10 0 make lib              make lib
+1 00 0 verification          test -f flop.h -a -f flop.o
+1 10 0 make clean            make clean ; make clean
+1 10 0 make clean (test)     test ! -f tp1.o && test ! -f tp1 && test ! -d data && test ! -f flop.o && test ! -f flop.h && test ! -f ./data/data.zip
+1 10 0 README.md             test -f README.md
+2 00 0 liste.sh              echo -e "angle_incidence_marge\\nvalidation_etat_appareil" | bash liste.sh > t1.guy ; WC=$(wc -l t1.guy) ; test ${WC:0:2} -eq 0
+0 10 0 copy lib              cp -f ${HOME}/depot/github/Draft/TP1_H2020/flop.[oh] .
+1 10 0 compilation           gcc -Wall -pedantic -I/usr/include/CUnit -L/usr/lib64 -std=c11 -O2 -o tp1 tp1.c flop.o -lcunit &> compilation.guy ; test ! -s compilation.guy
+1 10 0 compilation (backup)  make
+3 15 0 execution             ./tp1 | bash liste.sh | sort > fonction.guy
+2 00 0 resultats             ${HOME}/depot/compare.sh ./fonction.guy ${HOME}/depot/github/Draft/TP1_H2020/f5.guy && ${HOME}/depot/compare.sh ${HOME}/depot/github/Draft/TP1_H2020/f10.guy ./fonction.guy
+1 00 0 git ++                git add fonction.guy && git commit -m "output de tp1+liste.sh" && git push
+0 00 0                       echo -e "*** compilation ***" >> ../inf*/commentaires.txt ; cat compilation.guy >> ../inf*/commentaires.txt ; echo " " >> ../inf*/commentaires.txt
+0 00 0                       echo -e "***** liste.sh ****" >> ../inf*/commentaires.txt ; cat fonction.guy >> ../inf*/commentaires.txt ; echo " " >> ../inf*/commentaires.txt
+0 00 0                       echo -e "Correction fin." >> ../inf*/commentaires.txt
