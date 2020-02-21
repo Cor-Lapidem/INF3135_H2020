@@ -13,7 +13,7 @@
 0 10 0 copy lib              cp -f ${HOME}/depot/github/Draft/TP1_H2020/flop.[oh] .
 1 10 0 compilation           gcc -Wall -pedantic -I/usr/include/CUnit -L/usr/lib64 -std=c11 -O2 -o tp1 tp1.c flop.o -lcunit &> compilation.guy ; test ! -s compilation.guy
 1 10 0 compilation (backup)  make
-3 15 0 execution             ./tp1 | bash liste.sh | sort > fonction.guy
+3 15 0 execution             ./tp1 && ./tp1 | bash liste.sh | sort > fonction.guy
 2 00 0 resultats             ${HOME}/depot/compare.sh ./fonction.guy ${HOME}/depot/github/Draft/TP1_H2020/f5.guy && ${HOME}/depot/compare.sh ${HOME}/depot/github/Draft/TP1_H2020/f10.guy ./fonction.guy
 1 00 0 git ++                git add fonction.guy && git commit -m "output de tp1+liste.sh" && git push
 0 00 0                       echo -e "*** compilation ***" >> ../inf*/commentaires.txt ; cat compilation.guy >> ../inf*/commentaires.txt ; echo " " >> ../inf*/commentaires.txt
