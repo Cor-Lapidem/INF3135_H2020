@@ -60,7 +60,7 @@ $ head -n 100 file.txt | ./tp2
 #### Vous devez réaliser le travail selon les contraintes suivantes:
 
 - Les fichiers d'entête standard sont tous permis. Tel que `#include <stdio.h>`;
-- Vous devez utiliser les fichiers `flop.h` et `flop.o` qui sont fournis dans `tp1.zip`;
+- Vous devez utiliser les fichiers `flop.h` et `flop.o` qui sont fournis dans `tp2.zip`;
 - `cUnit` est la librairie non standard acceptée (car elle ne fait pas du langage C de base) ;
 - Les questions devront **toutes** être posées dans le forum de discussion GitHub section *Issues*;
 - Vous devez contribuer aux questions posées au moins une fois maximum deux fois;
@@ -232,7 +232,7 @@ Voici comment les cas et les traitements :
   son état lors de la récupération initiale;
 
 - Lorsqu'on entre `make lib`, le téléchargement du fichier 
-  https://github.com/guyfrancoeur/INF3135_H2020/raw/master/tp/tp1.zip
+  https://github.com/guyfrancoeur/INF3135_H2020/raw/master/tp/tp2.zip
   se fait de façon automatique dans un répertoire (./data). Par la suite, la décompression
   est nécessaire;
 
