@@ -89,15 +89,15 @@ Source : Larousse FR
    + ATTERRISSAGE (APPROCHE) entre -0.5 et -29.5
 - la borne inférieure afin de considérer les volets ouverts (valeur incluse)
    + 0.9
-- la tolérance entre les volets (gauche vs droite)
-   + 0.5
+- ~~la tolérance entre les angles des volets (gauche vs droite)~~
+   + ~~0.5~~
 - la tolérance du stabilisateur horizontal (gauche vs droite)
    + 0.3
 - le MCAS est désactivé si l'angle du stabilisateur horizontal est en dehors de 
    + -1.9 et 1.9
 - la tolérance entre les capteurs d'angle d'incidence doit être inférieur ou égale à
    + 0.25 
-- la tolérance entre les capteurs longueur des volets
+- la tolérance entre les capteurs de ouverture (longueur) des volets **volet_ouverture_marge(G, D)**
    + 1.25
 - la longueur maximale d'un volet
    + 108
