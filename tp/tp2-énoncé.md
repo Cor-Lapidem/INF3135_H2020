@@ -225,7 +225,7 @@ Voici comment les cas et les traitements :
   
 - Le Makefile du `tp1` sera utilisé et modifié avec quelques changements :
   + La commande `make tp1` est la nouvelle commande pour construire l'exécutable `tp1`;
-  + La commande `make` employée seule devra exécuter la cible default;
+  + La commande `make` employée seule devra exécuter la cible `default` qui est dépendante de tp2;
   + La cible `tp2` doit exister pour construire l'exécutable `tp2`;
 
 - Lorsqu'on entre `make clean`, le projet revient dans son état d'origine, c'est-à-dire
