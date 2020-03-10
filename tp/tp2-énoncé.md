@@ -69,7 +69,7 @@ $ head -n 100 file.txt | ./tp2
 - Les fichiers seront maintenus dans la branche nommée `tp2`;
 - La branche `master` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
-- La gestion des répertoires doit ce faire de façon absolu (nommé) à partir de votre répertoire de travail;
+- La gestion des répertoires doit se faire de façon absolue (nommé) à partir de votre répertoire de travail;
   + Vous ne pouvez pas utiliser `..` ou la commande `cd` dans votre travail;
 - La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
 
@@ -88,22 +88,24 @@ Source : Larousse FR
    + VOL entre 9.0 et -9.0
    + ATTERRISSAGE (APPROCHE) entre -0.5 et -29.5
 - la borne inférieure afin de considérer les volets ouverts (valeur incluse)
-   + 0.9
+   + 0.900
 - ~~la tolérance entre les angles des volets (gauche vs droite)~~
    + ~~0.5~~
-- la tolérance du stabilisateur horizontal (gauche vs droite)
-   + 0.3
+- la tolérance du stabilisateur horizontal (gauche vs droite) est inférieure ou égale à
+   + 0.300
 - le MCAS est désactivé si l'angle du stabilisateur horizontal est en dehors de 
-   + -1.9 et 1.9
+   + -1.900 et 1.900
 - la tolérance entre les capteurs d'angle d'incidence doit être inférieur ou égale à
-   + 0.25 
-- la tolérance entre les capteurs de ouverture (longueur) des volets **volet_ouverture_marge(G, D)**
-   + 1.25
-- la longueur maximale d'un volet
-   + 108
+   + 0.250 
+- la tolérance entre les capteurs de l'ouverture (longueur) des volets est inférieure ou égale à 
+   + 1.250 **volet_ouverture_marge(G, D)**
+- la longueur maximale d'un volet (cette fonction n'est pas fournie)
+   + 108.000
  
  **NOTE les valeurs sont inclusives.**
 
+ **ATTENTION les valeurs ne devront jamais être arrondi. Vous devez considérer 3 décimales seulement.**
+ 
 ### Rôle de votre programme
 
  Le rôle de votre programme est de lire des transactions.  Les transactions sont décrites dans la section
@@ -137,7 +139,7 @@ Voici comment les cas et les traitements :
 1979998 01 9
 ```
 
-02: Lecture d'un des capteurs d'angle d'incidence
+02: Lecture d'un capteur d'angle d'incidence
  + ```<timestamp> 02 <A1|A2> <angle|ERROR>```
  + ```<size_t> 02 <A1|A2|A3> <float|ERROR>```
 ```
@@ -145,22 +147,27 @@ Voici comment les cas et les traitements :
 125 02 A2 ERROR
 129 02 A3 5.6
 141 02 A4 10.5 //n'existe pas
-142 02 A1 377.29
+142 02 A1 377.29 //est une erreur à gérer. les valeurs acceptées sont entre [0-360] degrés
+...
+144 02 A1 12.125
+145 02 A2 24.250
 ```
 
-03: Lecture de longueur d'un des volets (gauche ou droite)
+03: Lecture de longueur de l'ouverture d'un volet (gauche ou droite)
  + ```<timestamp> 03 <G|D> <longueur|ERROR>```
  + ```<size_t> 03 <G|D> <float|ERROR>```
 ```
 145 03 G 0.0
-146 03 D 1.0
-151 03 G 11.2
-156 03 D 12.1
-161 03 D -1.7
+146 03 D 1.0019
+151 03 G 11.200
+156 03 D 12.100
+161 03 D -1.700
 167 03 G ERROR
+170 03 G 10.000
+171 03 G 12.500
 ```
 
-04: Lecture d'un capteur d'un stabilisateur horizontal
+04: Lecture d'un capteur de l'angle stabilisateur horizontal
  + ```<timestamp> 04 <G|D> <angle|ERROR>```
  + ```<size_t> 04 <G|D> <float|ERROR>```
 ```
@@ -198,7 +205,7 @@ Voici comment les cas et les traitements :
  + ```08 <sensor> <timestamp> [information additionnelle]```
  + ```08 <VOLET=11|SH|AI|ETAT> <size_t> [D|G|valeur]```
 
-09: Indication des moments ou le système MCAS est actif ou inactif
+09: Indication des moments où le système MCAS est actif ou inactif
  + ```09 <MCAS> <ON|OFF>```
  + ```09 MCAS ON```
  
@@ -210,6 +217,7 @@ Voici comment les cas et les traitements :
 08 13 142 A1
 ...
 08 11 161 D
+06 11 170 MARGE
 06 12 179 3X
 09 MCAS OFF
 06 19 183
@@ -335,7 +343,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 - Un fichier nommé `tp1.c` réalisé lors du tp1;
 - Un fichier ``.gitignore``.
 
-  L'usage de la commande `rm` dans votre travail est permise.  Avec de grands pouvoir viennent de grandes responsabilités. 
+  L'usage de la commande `rm` dans votre travail est permise.  Avec de grands pouvoirs viennent de grandes responsabilités. 
 
   Les travaux seront corrigés sur le serveur Java. Vous devez donc vous assurer
   que votre programme fonctionne **sans modification** sur celui-ci.
