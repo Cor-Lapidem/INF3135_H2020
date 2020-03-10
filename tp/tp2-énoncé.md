@@ -186,9 +186,9 @@ Voici comment les cas et les traitements :
 ```
 183 05 19 911
 185 05 19 0
-191 05 11 1
-198 05 12 2
-199 05 11 0
+191 05 15 1
+198 05 16 2
+199 05 15 0
 ```
 
 ### Transaction en sortie
