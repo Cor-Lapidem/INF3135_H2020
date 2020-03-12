@@ -100,7 +100,7 @@ Source : Larousse FR
 - la tolérance entre les capteurs de l'ouverture (longueur) des volets est inférieure ou égale à 
    + 1.250 **volet_ouverture_marge(G, D)**
 - la longueur maximale d'un volet (cette fonction n'est pas fournie)
-   + 108.000
+   + 108.000 **aucune fonction existe pour ce critère**
  
  **NOTE les valeurs sont inclusives.**
 
@@ -193,6 +193,15 @@ Voici comment les cas et les traitements :
 
 ### Transaction en sortie
 
+La première ligne à écrire est la version de la librairie flop.
+
+Le mot `version #:` suivit de l<information de version retourné par la fonctionflop_version(...)
+
+similaire à ceci
+```
+version #: 0.0.10004
+```
+
 06: Détection des erreurs de système
  + ```06 <système> <timestamp> [information additionnelle]```
  + ```06 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t> [ ... ]```
@@ -211,6 +220,7 @@ Voici comment les cas et les traitements :
  
 #### exemple
 ```
+version #: 0.0.10004
 09 MCAS OFF
 ...
 09 MCAS ON
