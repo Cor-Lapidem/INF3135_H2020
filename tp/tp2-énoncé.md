@@ -193,11 +193,12 @@ Voici comment les cas et les traitements :
 
 ### Transaction en sortie
 
-La première ligne à écrire est la version de la librairie flop.
-
-Le mot `version #:` suivit de l<information de version retourné par la fonctionflop_version(...)
-
-similaire à ceci
+> > La première ligne à écrire est la version de la librairie flop.
+> >
+> > Le mot `version #:` suivit de l'information de version retourné par la fonction `flop_version(...)`
+> > contenu dans flop.h et flop.o
+> >
+> > similaire à
 ```
 version #: 0.0.10004
 ```
