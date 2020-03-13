@@ -69,7 +69,7 @@ Q6. Voulez-vous un (1) point bonus ? Est-ce que votre binôme vous donne un poin
 
 ## 6 - Git
 
-Assurez-vous que le labo est bien fait et envoyez vos fichiers dans gestion de version.
+Assurez-vous que le labo est bien fait et envoyez vos fichiers dans le gestionnaire de version.
 
 ### FIN.
 ---
