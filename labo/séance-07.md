@@ -32,9 +32,9 @@ Avez-vous des commandes comme `cd` ou `..` dans votre Makefile ?  Si oui il est 
 ## 2 - tp1.c
 
 Faire des tests qui ne soient pas redondants.  C'est le temps pour vous de faire le minimum.  Pour ce faire vous allez
-uniquement coder les fonctions requises uniquement.  Vos tests sont-ils déterministes.  Si vous avez des random sûrement
+uniquement coder les fonctions requises uniquement.  Vos tests sont-ils déterministes?  Si vous avez des valeurs aléatoires sûrement
 pas.  Si vous avez des boucles dans votre code est-ce que celles-ci en font trop ?  Quand nous avons des nombres tels
-que `float` ou `double` il est important de prendre des précautions.  Quelles sont telles ? Qu'avez-vous fait pour garantir
+que `float` ou `double` il est important de prendre des précautions.  Quelles sont-elles ? Qu'avez-vous fait pour garantir
 que les tests unitaires soient exactement ce que vous avez en tête ? Avez-vous des modules des fichiers d'entêtes (.h) ?
 
 + Q1. Combien de fonctions sont nécessaires pour tester tous les cas ?
@@ -45,7 +45,7 @@ que les tests unitaires soient exactement ce que vous avez en tête ? Avez-vous 
 Il souhaitable d'utiliser `valgrind` pour compléter les exercices de cette séance. Vous allez donc créer une cible nommée `leak`
 afin de vérifier s'il y a une fuite de mémoire dans votre programme.
 
-+ Q1. Pourquoi utilisé valgrind ?
++ Q1. Pourquoi utiliser valgrind ?
 + Q2. Est-ce facile d'utiliser valgrind ?
 + Q3. Est-ce que valgrind est utile ?
 
@@ -57,15 +57,15 @@ résultat sur `stdout`.
 
 ## 5 - Évaluation
 
-Vous avez fini super.  Vous demandez au voisin de revoir votre projet.  Il doit être critique et vous dire tout ce qui ne
+Vous avez fini super.  Demandez au voisin de revoir votre projet.  Il doit être critique et vous dire tout ce qui ne
 va pas. Vous allez faire de même pour une autre personne.  
 
-Q1. Êtes-vous satisfait de votre livrable ? Pourquoi ?
-Q2. Comment ce nomme cet exercice de révision de code d'une autre personne ?
-Q3. Qu'avez-vous appris de cet exercice ?
-Q4. Est-ce facile de lire le code des autres ?
-Q5. Est-ce que votre projet `tp1` fonctionne mieux ?
-Q6. Voulez-vous un (1) point bonus ? Est-ce que votre binôme vous donne un point ? Pourquoi ?
+Q1. Êtes-vous satisfait de votre livrable ? Pourquoi ?  
+Q2. Comment ce nomme cet exercice de révision de code d'une autre personne ?  
+Q3. Qu'avez-vous appris de cet exercice ?  
+Q4. Est-ce facile de lire le code des autres ?  
+Q5. Est-ce que votre projet `tp1` fonctionne mieux ?  
+Q6. Voulez-vous un (1) point bonus ? Est-ce que votre binôme vous donne un point ? Pourquoi ?  
 
 ## - 6 Git
 
