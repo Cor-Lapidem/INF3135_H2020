@@ -67,7 +67,7 @@ Q4. Est-ce facile de lire le code des autres ?
 Q5. Est-ce que votre projet `tp1` fonctionne mieux ?  
 Q6. Voulez-vous un (1) point bonus ? Est-ce que votre binôme vous donne un point ? Pourquoi ?  
 
-## - 6 Git
+## 6 - Git
 
 Assurez-vous que le labo est bien fait et envoyez vos fichiers dans gestion de version.
 
