@@ -165,6 +165,7 @@ Voici comment les cas et les traitements :
 167 03 G ERROR
 170 03 G 10.000
 171 03 G 12.500
+172 03 D 24.500
 ```
 
 04: Lecture d'un capteur de l'angle stabilisateur horizontal
@@ -228,7 +229,7 @@ version #: 0.0.10004
 08 13 142 A1
 ...
 08 11 161 D
-06 11 170 MARGE
+06 11 172 MARGE
 06 12 179 3X
 09 MCAS OFF
 06 19 183
