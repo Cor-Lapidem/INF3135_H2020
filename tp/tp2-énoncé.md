@@ -147,7 +147,7 @@ Voici comment les cas et les traitements :
 125 02 A2 ERROR
 129 02 A3 5.6
 141 02 A4 10.5 //n'existe pas
-142 02 A1 377.29 //est une erreur à gérer. les valeurs acceptées sont entre [0-360] degrés
+142 02 A1 377.29 //une erreur à gérer. les valeurs acceptées sont entre [ ± 0-360 ] degrés
 ...
 144 02 A1 12.125
 145 02 A2 24.250
