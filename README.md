@@ -15,8 +15,8 @@
   + Groupe 030 : SH-2120
   + Étudiants inscrits en math INF1132 de 14h à 20h au local : PK-R210
 - Travail 1 10% : 8 février 2020 22h59 ET (heure du Québec,  ET = Eastern Time)
-- Travail 2 20% : 21 mars 2020 21h59 ET
-- Travail 3 20% :
+- Travail 2 20% : ~~21 mars 2020 21h59 ET~~ 30 mars 2020 11h59 ET
+- Travail 3 20% : 29 avril 2020 22h59 ET 
 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
