@@ -229,7 +229,8 @@ version #: 0.0.10004
 08 13 142 A1
 ...
 08 11 161 D
-06 11 172 MARGE
+06 11 172 MARGE //ajouter par la suite
+09 MCAS OFF     //ajouter par la suite
 06 12 179 3X
 09 MCAS OFF
 06 19 183
@@ -332,7 +333,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
 # Remise
 
-  La totalité de votre travail doit être remise au plus tard le **21 mars 2020** à **21h59** ET (heure du Québec).
+  La totalité de votre travail doit être remise au plus tard le ~~**21 mars 2020** à **21h59**~~ **30 mars 2020 11h59 ET** (heure du Québec).
   Après cette date, une pénalité de **10 points par jour** de retard sera appliquée.
 
   La remise se fait **obligatoirement** par l'intermédiaire de la plateforme `Github https://github.com/` 
@@ -347,6 +348,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
   Votre projet devrait minimalement contenir, à la racine du dépôt, les fichiers de type `Unix/Linux` et `ascii` suivants :
 
 - Un fichier `tp2.c` contenant le code source de votre projet, ainsi que votre fonction `main`;
+> > - Les fichiers `malib.c` et `malib.h` doivent exister;
 - Un fichier `README.md` selon le format proposé;
 - Un fichier `reflexion.md` qui démontre le processus de réflexion durant le travail;
 - Un fichier nommé `Makefile` complet et optimal;
