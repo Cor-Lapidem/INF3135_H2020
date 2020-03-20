@@ -357,6 +357,9 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 - Un fichier nommé `tp1.c` réalisé lors du tp1;
 - Un fichier ``.gitignore``.
 
+Bonus
+> > - Un fichier `YAML` nommé `ci.yml` dans le répertoire approprié (pour avoir le bonus).
+
   L'usage de la commande `rm` dans votre travail est permise.  Avec de grands pouvoirs viennent de grandes responsabilités. 
 
   Les travaux seront corrigés sur le serveur Java. Vous devez donc vous assurer
@@ -367,7 +370,8 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 | Critère | Sous-critère | Points |
 | ------- |:------------ | ------:|
 | Récupération      | récupération sans problème et dépôt privée     | 1.0 |
-| Makefile          |                                                | 3.0 |
+| Makefile          |                                                | 2.0 |
+| malib.h/c         | avec la détection des inclusions multiples     | 1.0 |
 | Compilation       | sans avertissement ni erreur                   | 2.0 |
 | Fonctionnabilité  | tests seront lancés (comparaison binaire)      | 8.0 |
 | Branche (git)     | nommée tp2 (branche de developpement)          | 1.0 |
