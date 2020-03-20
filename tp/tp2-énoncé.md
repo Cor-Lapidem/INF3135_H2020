@@ -36,13 +36,13 @@ découverte qui suit. Bonne écoute.
   Vous devez dans un fichier nommé `tp2.c` coder la nouvelle version du système MCAS.  Ce système gère des
   données en entrée (stdin) et en sortie (stdout).  Il est très compliqué de déployer des programmes dans un
   avion.  C'est une activité critique qui ne laisse pas de place pour l'erreur.  Vous devez réussir du premier
-  coup, il n'y a pas de place pour une deuxième chance.  La date de livraison doit être respectée.
+  coup, il n'y a pas de place pour une deuxième chance.  La date de livraison est importante et doit être respectée.
 
   Cette fois vous utiliserez les fonctions valides disponibles dans `flop.h` et `flop.o` pour réaliser le travail.
   
   Le rôle du programme `tp2.c` et de son exécutable est de traiter toutes les lignes de données.  Dans certains
-  cas vous avez à produire des données sur le canal standard.  Ceci simule le dialogue (les données) des boîtes
-  noires de l'avion.  Le résultat en sortie est celui qui sera évalué.
+  cas vous avez à produire des données sur le canal (stdout) de sortie standard.  Ceci simule le dialogue 
+  (les données exchangé) des boîtes noires de l'avion.  Le résultat en sortie est celui qui sera évalué.
   
   Le programme exécutable peut être lancé en ligne de commande avec différentes syntaxes :
 
@@ -219,11 +219,13 @@ version #: 0.0.10004
 09: Indication des moments où le système MCAS est actif ou inactif
  + ```09 <MCAS> <ON|OFF>```
  + ```09 MCAS ON```
+ + Le MCAS est ON par default. Il sera fermé lors des detections d'anomalies.
  
 #### exemple
 ```
 version #: 0.0.10004
-09 MCAS OFF
+...
+09 MCAS OFF     //off a cause de qqc je ne sais pas quoi!
 ...
 09 MCAS ON
 08 13 142 A1
