@@ -207,25 +207,28 @@ version #: 0.0.10004
 06: Détection des erreurs de système
  + ```06 <système> <timestamp> [information additionnelle]```
  + ```06 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t> [ ... ]```
+ + Cette transaction déclanche l'affichage de `09 MCAS OFF`.
  
-07: Système de nouveau fonctionnel 
+07: Système de nouveau fonctionnel
  + ```07 <système> <timestamp>```
  + ```07 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t>```
+ + Cette transaction déclanche l'affichage de `09 MCAS ON` si aucun autre système est en erreur.
 
 08: Détection d'une valeur inacceptable provenant de senseurs
  + ```08 <sensor> <timestamp> [information additionnelle]```
- + ```08 <VOLET=11|SH|AI|ETAT> <size_t> [D|G|valeur]```
+ + ```08 <VOLET=11|SH|AI|ETAT> <size_t> [A1|A2|A3|D|G|valeur]```
+ + Cette transaction ne déclanche pas l'affichage de `09 MCAS OFF` (pour garDer ça simple).
 
 09: Indication des moments où le système MCAS est actif ou inactif
  + ```09 <MCAS> <ON|OFF>```
  + ```09 MCAS ON```
- + Le MCAS est ON par default. Il sera fermé lors des detections d'anomalies.
+ + Le MCAS est `ON` par default. Il sera fermé lors de détections d'anomalies.
  
 #### exemple
 ```
 version #: 0.0.10004
 ...
-09 MCAS OFF     //off a cause de qqc je ne sais pas quoi!
+09 MCAS OFF     //off a cause de qqc je ne sais pas quoi ce n<est pas dit dans l'exemple!
 ...
 09 MCAS ON
 08 13 142 A1
@@ -236,6 +239,7 @@ version #: 0.0.10004
 06 12 179 3X
 09 MCAS OFF
 06 19 183
+09 MCAS OFF
 07 19 185
 ...
 ```
