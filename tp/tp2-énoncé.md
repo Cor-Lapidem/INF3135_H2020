@@ -42,7 +42,7 @@ découverte qui suit. Bonne écoute.
   
   Le rôle du programme `tp2.c` et de son exécutable est de traiter toutes les lignes de données.  Dans certains
   cas vous avez à produire des données sur le canal (stdout) de sortie standard.  Ceci simule le dialogue 
-  (les données exchangé) des boîtes noires de l'avion.  Le résultat en sortie est celui qui sera évalué.
+  (les données échangées) des boîtes noires de l'avion.  Le résultat en sortie est celui qui sera évalué.
   
   Le programme exécutable peut être lancé en ligne de commande avec différentes syntaxes :
 
@@ -100,7 +100,7 @@ Source : Larousse FR
 - la tolérance entre les capteurs de l'ouverture (longueur) des volets est inférieure ou égale à 
    + 1.250 **volet_ouverture_marge(G, D)**
 - la longueur maximale d'un volet (cette fonction n'est pas fournie)
-   + 108.000 **aucune fonction existe pour ce critère**
+   + 108.000 **aucune fonction n’existe pour ce critère**
  
  **NOTE les valeurs sont inclusives.**
 
@@ -110,7 +110,7 @@ Source : Larousse FR
 
  Le rôle de votre programme est de lire des transactions.  Les transactions sont décrites dans la section
  **Transaction en entrée / Transaction en sortie**.  Les transactions sont très formelles.  Il s'agit d'un
- système dit critique, aucune nuance possible.  Ceci ne veut pas dire que les transactions ou le système
+système dit critique, aucune nuance possible.  Ceci ne veut pas dire que les transactions ou le système
  est exempt d'erreurs.  Vous ne devez, en aucun temps (jamais), laisser le hasard gérer la situation.
 
 Voici comment les cas et les traitements :
@@ -196,7 +196,7 @@ Voici comment les cas et les traitements :
 
 > > La première ligne à écrire est la version de la librairie flop.
 > >
-> > Le mot `version #:` suivit de l'information de version retourné par la fonction `flop_version(...)`
+> > Le mot `version #:` suivit de l'information de version retournée par la fonction `flop_version(...)`
 > > contenu dans flop.h et flop.o
 > >
 > > similaire à
@@ -207,28 +207,28 @@ version #: 0.0.10004
 06: Détection des erreurs de système
  + ```06 <système> <timestamp> [information additionnelle]```
  + ```06 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t> [ ... ]```
- + Cette transaction déclanche l'affichage de `09 MCAS OFF`.
+ + Cette transaction déclenche l'affichage de `09 MCAS OFF`.
  
 07: Système de nouveau fonctionnel
  + ```07 <système> <timestamp>```
  + ```07 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t>```
- + Cette transaction déclanche l'affichage de `09 MCAS ON` si aucun autre système est en erreur.
+ + Cette transaction déclenche l'affichage de `09 MCAS ON` si aucun autre système est en erreur.
 
 08: Détection d'une valeur inacceptable provenant de senseurs
  + ```08 <sensor> <timestamp> [information additionnelle]```
  + ```08 <VOLET=11|SH|AI|ETAT> <size_t> [A1|A2|A3|D|G|valeur]```
- + Cette transaction ne déclanche pas l'affichage de `09 MCAS OFF` (pour garDer ça simple).
+ + Cette transaction ne déclenche pas l'affichage de `09 MCAS OFF` (pour garder ça simple).
 
 09: Indication des moments où le système MCAS est actif ou inactif
  + ```09 <MCAS> <ON|OFF>```
  + ```09 MCAS ON```
- + Le MCAS est `ON` par default. Il sera fermé lors de détections d'anomalies.
+ + Le MCAS est `ON` par défaut. Il sera fermé lors de détections d'anomalies.
  
 #### exemple
 ```
 version #: 0.0.10004
 ...
-09 MCAS OFF     //off a cause de qqc je ne sais pas quoi ce n<est pas dit dans l'exemple!
+09 MCAS OFF     //off à cause de qqc je ne sais pas quoi ce n'est pas dit dans l'exemple!
 ...
 09 MCAS ON
 08 13 142 A1
@@ -276,7 +276,7 @@ version #: 0.0.10004
 de rejeter certaines extensions comme celles de GNU par exemple)
 + `-pedantic` permet de signaler les avertissements, ou warnings, selon la norme ISO
 + `-Wall` permet de signaler un grand nombre d'autres warnings décrit dans le man gcc.
-En effet, la grande permissivité de C réduit l'aide du compilateur (lorsque qu'il n'y a pas d'option)
+En effet, la grande permissivité de C réduit l'aide du compilateur (lorsqu'il n'y a pas d'option)
 pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
 ## .gitignore
@@ -380,11 +380,11 @@ Bonus
 | malib.h/c         | avec la détection des inclusions multiples     | 1.0 |
 | Compilation       | sans avertissement ni erreur                   | 2.0 |
 | Fonctionnabilité  | tests seront lancés (comparaison binaire)      | 8.0 |
-| Branche (git)     | nommée tp2 (branche de developpement)          | 1.0 |
+| Branche (git)     | nommée tp2 (branche de développement)          | 1.0 |
 | Issues (git)      | intervention                                   | 1.0 |
 | Optimal (git)     |                                                | 1.0 |
 | Professionnel     | :wink: (simple et sans mystère)                | 2.0 |
-| Markdown          | README.md (reflexion)                          | 1.0 |
+| Markdown          | README.md (réflexion)                          | 1.0 |
 | Bonus             | GitHub Action (YAML)                           | 1.0 |
 | **Total**         |                                                | 21/20 |
 
