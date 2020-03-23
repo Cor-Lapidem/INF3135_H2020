@@ -212,17 +212,18 @@ version #: 0.0.10004
 07: Système de nouveau fonctionnel
  + ```07 <système> <timestamp>```
  + ```07 <VOLET=11,SH,AI,ETAT|[15-19]> <size_t>```
- + Cette transaction déclenche l'affichage de `09 MCAS ON` si aucun autre système est en erreur.
+> > + Après cette transaction on pourrait affichager `09 MCAS ON`, si aucun autre système est en erreur.
 
 08: Détection d'une valeur inacceptable provenant de senseurs
  + ```08 <sensor> <timestamp> [information additionnelle]```
  + ```08 <VOLET=11|SH|AI|ETAT> <size_t> [A1|A2|A3|D|G|valeur]```
- + Cette transaction ne déclenche pas l'affichage de `09 MCAS OFF` (pour garder ça simple).
+> > + Après cett transaction il n'y a pas automatiquement d'affichage `09 MCAS OFF` voir en trx `09`.
 
 09: Indication des moments où le système MCAS est actif ou inactif
  + ```09 <MCAS> <ON|OFF>```
  + ```09 MCAS ON```
  + Le MCAS est `ON` par défaut. Il sera fermé lors de détections d'anomalies.
+> > + Pour savoir si on ferme le MCAS, valider avec le maximum de données (2 valeur pour VOLET, AI, SH).
  
 #### exemple
 ```
